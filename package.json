@@ -1,0 +1,37 @@
+{
+  "name": "",
+  "version": "",
+  "scripts": {
+    "start": "SITE_ENV=dev webpack-dev-server --history-api-fallback",
+    "hot": "SITE_ENV=hot node server.js",
+    "build": "SITE_ENV=dev webpack",
+    "build_prod": "SITE_ENV=prod webpack --bail",
+    "stats": "webpack --profile --json > stats.json"
+  },
+  "devDependencies": {
+    "babel-core": "^6.22.1",
+    "babel-loader": "^6.2.10",
+    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-react": "^6.22.0",
+    "babel-preset-stage-1": "^6.22.0",
+    "clean-webpack-plugin": "^0.1.15",
+    "css-loader": "^0.26.1",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.10.0",
+    "html-webpack-plugin": "^2.28.0",
+    "json-loader": "^0.5.4",
+    "node-sass": "^4.5.0",
+    "react-hot-loader": "^3.0.0-beta.6",
+    "sass-loader": "^5.0.1",
+    "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7",
+    "webpack": "^2.2.1",
+    "webpack-dev-server": "^2.3.0",
+    "webpack-merge": "^2.6.1",
+    "webpack-validator": "^2.3.0"
+  },
+  "dependencies": {
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2"
+  }
+}
